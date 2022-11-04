@@ -1,0 +1,57 @@
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.dark-theme {
+  background-color: var(--dark);
+}
+
+.button-container {
+  background-color: #111;
+  border-radius: 80px;
+  width: 200px;
+  height: 80px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.button-container i {
+  color: rgb(248, 217, 39);
+  font-size: 50px;
+}
+
+.button-switch {
+  left: 5px;
+  position: absolute;
+  background-color: var(--light);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* display: none; */
+}
+
+.button-animation {
+  left: inherit;
+  transform: translateX(110px);
+}
